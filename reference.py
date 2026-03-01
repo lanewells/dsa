@@ -78,3 +78,27 @@ print(message)  # prints: Hawaii joined the U.S. in 1959.
 
 print("this thang".split(" "))
 print("this.thang".split("."))  # prints: ['this', 'thang']
+
+# Arrays & Iteration Basics
+## List Comprehension
+
+# [ expression for item in iterable if condition ]
+# [ EXPRESSION  for  VARIABLE  in  LIST  if CONDITION ]
+
+a = []
+[x for x in a if x < 5]
+
+# first x → what you want to put into the new list
+# second x → the temporary variable representing each item as you loop
+# a → the list you're looping over
+# x < 5 → the filter condition
+
+# ex: print the numbers in a that are less than 5.
+
+a = [1, 2, 3, 5, 8, 13, 21, 55]
+print([x for x in a if x < 5])
+
+# aka:
+for x in a:
+    if x < 5:
+        print(x)
