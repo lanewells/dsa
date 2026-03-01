@@ -82,6 +82,12 @@ print("this.thang".split("."))  # prints: ['this', 'thang']
 # Arrays & Iteration Basics
 ## List Comprehension
 
+# for loop
+
+a=[]
+for x in a:
+    print (x)
+
 # [ expression for item in iterable if condition ]
 # [ EXPRESSION  for  VARIABLE  in  LIST  if CONDITION ]
 
@@ -102,3 +108,17 @@ print([x for x in a if x < 5])
 for x in a:
     if x < 5:
         print(x)
+
+
+# Sets
+
+# set: a collection of unique values (no duplicates) + order doesn't matter
+
+a_list = [1, 1, 2, 3]
+set(a_list)
+print(set(a_list))
+# => {1, 2, 3}
+
+# convert back into list
+print(list(set(a_list)))
+# => [1, 2, 3]
