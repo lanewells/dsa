@@ -1,6 +1,6 @@
 # Data Structures & Algorithms
 
-# DSA Practice
+DSA Practice
 
 Repo where I strengthen my problem-solving strategies and efficiency, structured by algorithmic pattern. Here, I also include notes on time & space complexity and log my mistakes.
 
