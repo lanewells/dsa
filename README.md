@@ -2,7 +2,7 @@
 
 # DSA Practice
 
-Repo where I strengthen my problem-solving strategies and efficiency, structured by algorithmic pattern.
+Repo where I strengthen my problem-solving strategies and efficiency, structured by algorithmic pattern. Here, I also include notes on time & space complexity and log my mistakes.
 
 ## Structure
 
@@ -17,7 +17,12 @@ dsa-practice/
 ├── binary_search/
 ├── stack/
 ├── linked_lists/
-└── trees/
+├── trees/
+└── notes/
+    ├── patterns.md
+    ├── time_complexity.md
+    └── mistakes.md
+
 ```
 
 ### Arrays
@@ -38,7 +43,7 @@ constant-time lookup with dictionaries
 
 ### Two Pointers
 
-traversing data from two directions simultaneously
+traversing data from 2 directions simultaneously
 
 - Valid Palindrome
 - Container With Most Water
@@ -61,7 +66,7 @@ logarithmic search of sorted data
 
 ### Stack
 
-LIFO structures, parsing sequences.
+LIFO structures, parsing sequences
 
 - Valid parentheses
 - Stack-based parsing
@@ -101,4 +106,4 @@ Format:
 
 ## Purpose
 
-This repository serves as my personal reference while practicing algorithmic patterns and preparing for technical interviews.
+This repository serves as my personal reference while practicing algorithmic patterns and preparing for technical interviews. Feel free to fork / clone this repo, clear my solutions, and use it for your own practice and learning if you'd like.
