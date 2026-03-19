@@ -17,6 +17,8 @@
     
 # Follow-up: Can you come up with an algorithm that is less than O(n2) time complexity?
 
+nums = [2,7,11,15], target = 9
+
 class Solution(object):
     def twoSum(self, nums, target):
         """
@@ -24,4 +26,10 @@ class Solution(object):
         :type target: int
         :rtype: List[int]
         """
-        
+        prevMap = {}
+
+        for i, n in enumerate(nums):
+            diff = target - n
+            if diff in prevMap:
+                return [prevMap[diff], i]
+            prevMap[n] = i
