@@ -19,6 +19,32 @@
 # 1 <= prices.length <= 105
 # 0 <= prices[i] <= 104
 
+# class Solution(object):
+#     def maxProfit(self, prices):
+#         """
+#         :type prices: List[int]
+#         :rtype: int
+#         """
+#         max_profit = 0
+
+#         for i in range(len(prices)-1):
+#             highest_sell_price = float('-inf')
+
+#             for j in range(i+1, len(prices)):
+#                 highest_sell_price = max(highest_sell_price, prices[j])
+#                 current_profit = highest_sell_price - prices[i]
+
+#                 max_profit = max(current_profit, max_profit)
+
+#         return max_profit  
+    
+    # Time: O(n^2)
+    # Approach: brute force; nested for loops
+    # Notes: exceeds time limit
+
+
+#################
+
 class Solution(object):
     def maxProfit(self, prices):
         """
@@ -26,18 +52,14 @@ class Solution(object):
         :rtype: int
         """
         max_profit = 0
-
-        for i in range(len(prices)-1):
-            highest_sell_price = float('-inf')
-
-            for j in range(i+1, len(prices)):
-                highest_sell_price = max(highest_sell_price, prices[j])
-                current_profit = highest_sell_price - prices[i]
-
-                max_profit = max(current_profit, max_profit)
-
-        return max_profit  
+        lowest_buy_price = prices[0]
+        for i in range(1, len(prices)):
+            current_profit = prices[i] - lowest_buy_price
+            max_profit = max(max_profit, current_profit)
+            lowest_buy_price = min(lowest_buy_price, prices[i])
+        return max_profit
     
-    # Time: O(n^2)
-    # Approach: brute force; nested for loops
-    # Notes: exceeds time limit
+
+    # Time: O(n)
+    # Approach: 
+    # Notes: better
